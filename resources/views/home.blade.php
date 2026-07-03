@@ -6,18 +6,33 @@
 @section('content')
     <section class="hero-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6">
                     <span class="hero-badge">{{ config('portfolio.title') }}</span>
                     <h1 class="hero-title">Hi, I'm {{ config('portfolio.name') }}</h1>
                     <p class="hero-subtitle">{{ config('portfolio.tagline') }}</p>
-                    <div class="d-flex flex-wrap gap-3">
+                    <div class="d-flex flex-wrap gap-3 mb-4">
                         <a href="{{ route('projects.index') }}" class="btn btn-accent">View My Projects</a>
                         <a href="{{ route('contact') }}" class="btn btn-outline-accent">Contact Me</a>
                         <a href="{{ config('portfolio.github_url') }}" class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-github me-1"></i> GitHub
                         </a>
                     </div>
+                    <div class="hero-profile-card">
+                        <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} portrait" class="profile-image mb-3">
+                        <div>
+                            <p class="mb-3">Hello! I am a software engineering student at Aptech, building responsive web experiences using PHP, Laravel, and modern frontend tools.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="{{ config('portfolio.linkedin_url') }}" class="btn btn-outline-dark-custom btn-sm" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-linkedin me-1"></i> LinkedIn
+                                </a>
+                                <a href="{{ route('contact') }}" class="btn btn-outline-accent btn-sm">Request Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} portrait" class="profile-hero-image">
                 </div>
             </div>
         </div>
@@ -33,6 +48,31 @@
                 </div>
                 <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
                     <a href="{{ route('about') }}" class="btn btn-outline-dark-custom">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding pt-0">
+        <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-8">
+                    <div class="info-card profile-card h-100">
+                        <h3 class="h5 mb-3">Connect with me</h3>
+                        <p class="mb-3">I’m active on LinkedIn and my Indeed profile is available using the same email address below.</p>
+                        <ul class="list-unstyled mb-0">
+                            <li><strong>LinkedIn:</strong> <a href="{{ config('portfolio.linkedin_url') }}" target="_blank" rel="noopener noreferrer">{{ config('portfolio.linkedin_url') }}</a></li>
+                            <li><strong>Indeed:</strong> Available via <a href="mailto:{{ config('portfolio.email') }}">{{ config('portfolio.email') }}</a></li>
+                            <li><strong>Resume:</strong> {{ config('portfolio.resume_note') }}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-card h-100 text-center p-4">
+                        <h3 class="h5 mb-3">Profile</h3>
+                        <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} profile" class="profile-card-image mb-3">
+                        <p class="mb-0">{{ config('portfolio.name') }}<br>{{ config('portfolio.title') }}</p>
+                    </div>
                 </div>
             </div>
         </div>

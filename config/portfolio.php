@@ -9,7 +9,10 @@ return [
     'location' => 'Pakistan',
     'github_username' => env('GITHUB_USERNAME', 'subhanshahid1'),
     'github_url' => 'https://github.com/subhanshahid1',
+    'linkedin_url' => 'https://www.linkedin.com/in/subhan-shahid-3688ba3b3/',
+    'indeed_note' => 'Indeed profile is available via the same contact email.',
     'email' => env('CONTACT_EMAIL', 'subhanshahid.pk1@gmail.com'),
+    'resume_note' => 'Resume is available on request via email.',
 
     'about' => [
         'intro' => 'I am a software engineering student at Aptech, pursuing the Advance Diploma in Software Engineering (ADSE). I have completed two semesters and enjoy turning ideas into clean, functional web applications.',

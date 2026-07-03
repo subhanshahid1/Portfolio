@@ -120,6 +120,44 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
+.profile-hero-image,
+.profile-image,
+.profile-card-image {
+    max-width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.2);
+}
+
+.profile-hero-image {
+    max-width: 360px;
+    width: 100%;
+    border-radius: 1.75rem;
+}
+
+.profile-image {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+.profile-card-image {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    margin: 0 auto;
+}
+
+.hero-profile-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
 .hero-section::before {
     content: '';
     position: absolute;
