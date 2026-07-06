@@ -288,6 +288,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(17, 24, 39, 0.9));
+    border: 1px solid rgba(86, 118, 147, 0.28);
+    box-shadow: 0 16px 40px rgba(2, 8, 23, 0.16);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(110, 231, 183, 0.38);
 }
 
 .project-card img {
@@ -295,19 +304,46 @@ h1, h2, h3, h4, h5, h6 {
     height: 220px;
     object-fit: cover;
     object-position: top;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(86, 118, 147, 0.24);
 }
 
 .project-card-body {
-    padding: 1.5rem;
+    padding: 1.35rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.project-card-body p {
-    color: var(--text-muted);
-    flex-grow: 1;
+.project-card-top h3 {
+    color: #f8fafc;
+    font-size: 1.18rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-problem {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0.9rem;
+}
+
+.project-card-section {
+    margin-bottom: 0.9rem;
+}
+
+.project-card-section h4 {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #6ee7b7;
+    margin-bottom: 0.35rem;
+}
+
+.project-card-section p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .page-header {

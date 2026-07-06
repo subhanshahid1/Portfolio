@@ -27,15 +27,28 @@
                         <article class="project-card">
                             <img src="{{ asset($project['thumbnail']) }}" alt="{{ $project['title'] }} preview">
                             <div class="project-card-body">
-                                <h3>{{ $project['title'] }}</h3>
-                                <p>{{ $project['short_description'] }}</p>
+                                <div class="project-card-top">
+                                    <h3>{{ $project['title'] }}</h3>
+                                    <p class="project-problem">{{ $project['short_description'] }}</p>
+                                </div>
+
+                                <div class="project-card-section">
+                                    <h4>Execution</h4>
+                                    <p>{{ $project['description'] }}</p>
+                                </div>
+
+                                <div class="project-card-section">
+                                    <h4>Outcome</h4>
+                                    <p>{{ $project['short_description'] }}</p>
+                                </div>
+
                                 <div class="mb-3">
                                     @foreach ($project['tech'] as $tech)
                                         <span class="skill-badge">{{ $tech }}</span>
                                     @endforeach
                                 </div>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <a href="{{ route('projects.show', $project['slug']) }}" class="btn btn-accent btn-sm">View Details</a>
+                                <div class="d-flex flex-wrap gap-2 mt-auto">
+                                    <a href="{{ route('projects.show', $project['slug']) }}" class="btn btn-accent btn-sm">View Case Study</a>
                                     <a href="{{ $project['github_url'] }}" class="btn btn-outline-dark-custom btn-sm" target="_blank" rel="noopener noreferrer">GitHub</a>
                                     @if ($project['live_url'])
                                         <a href="{{ $project['live_url'] }}" class="btn btn-outline-accent btn-sm" target="_blank" rel="noopener noreferrer">Live Demo</a>
