@@ -8,20 +8,20 @@
         <div class="container">
             <div class="row align-items-center gy-5">
                 <div class="col-lg-6">
-                    <span class="hero-badge">{{ config('portfolio.title') }}</span>
-                    <h1 class="hero-title">Hi, I'm {{ config('portfolio.name') }}</h1>
-                    <p class="hero-subtitle">{{ config('portfolio.tagline') }}</p>
-                    <div class="d-flex flex-wrap gap-3 mb-4">
-                        <a href="{{ route('projects.index') }}" class="btn btn-accent">View My Projects</a>
-                        <a href="{{ route('contact') }}" class="btn btn-outline-accent">Contact Me</a>
+                    <span class="hero-badge fade-in-up">{{ config('portfolio.title') }}</span>
+                    <h1 class="hero-title fade-in-up">Engineering Scalable Software Solutions &amp; Exploring Advanced Computational Systems</h1>
+                    <p class="hero-subtitle fade-in-up">I build reliable web applications, structure maintainable systems, and pursue technical growth with a strong commitment to rigorous engineering, thoughtful architecture, and long-term problem solving.</p>
+                    <div class="d-flex flex-wrap gap-3 mb-4 fade-in-up">
+                        <a href="{{ route('projects.index') }}" class="btn btn-accent">View Selected Work</a>
+                        <a href="{{ route('contact') }}" class="btn btn-outline-accent">Discuss Opportunities</a>
                         <a href="{{ config('portfolio.github_url') }}" class="btn btn-outline-accent" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-github me-1"></i> GitHub
                         </a>
                     </div>
-                    <div class="hero-profile-card">
+                    <div class="hero-profile-card fade-in-up">
                         <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} portrait" class="profile-image mb-3">
                         <div>
-                            <p class="mb-3">Hello! I am a software engineering student at Aptech, building responsive web experiences using PHP, Laravel, and modern frontend tools.</p>
+                            <p class="mb-3">My work focuses on building structured digital products with clear architecture, modern frameworks, and a disciplined approach to software quality.</p>
                             <div class="d-flex flex-wrap gap-2">
                                 <a href="{{ config('portfolio.linkedin_url') }}" class="btn btn-outline-dark-custom btn-sm" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-linkedin me-1"></i> LinkedIn
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-end">
-                    <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} portrait" class="profile-hero-image">
+                    <img src="{{ asset('images/profile.png') }}" alt="{{ config('portfolio.name') }} portrait" class="profile-hero-image fade-in-up">
                 </div>
             </div>
         </div>
@@ -43,8 +43,11 @@
             <div class="row align-items-end mb-5">
                 <div class="col-lg-8">
                     <span class="section-label">About Me</span>
-                    <h2 class="section-title">Software engineering student building real projects</h2>
-                    <p class="section-intro">{{ config('portfolio.about.intro') }}</p>
+                    <h2 class="section-title">Building disciplined software engineering practice with academic depth</h2>
+                    <div class="section-intro">
+                        <p class="mb-3">I develop software with a strong emphasis on maintainable architecture, thoughtful framework usage, and clean engineering practices. My work spans Laravel-based applications, browser interfaces, and full-stack systems where reliability, clarity, and long-term extensibility matter.</p>
+                        <p class="mb-0">Beyond implementation, I am motivated by complex computational problems, analytical reasoning, and the pursuit of deeper knowledge through higher education and research-oriented development. I aim to contribute to systems that are not only functional, but also intellectually rigorous and scalable.</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
                     <a href="{{ route('about') }}" class="btn btn-outline-dark-custom">Read More</a>

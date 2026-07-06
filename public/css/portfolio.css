@@ -19,6 +19,7 @@
 
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
     color: var(--text);
     background: var(--bg);
     line-height: 1.7;
@@ -66,21 +67,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-accent {
-    background: var(--accent);
-    border-color: var(--accent);
+    background: linear-gradient(135deg, #2f7d5c 0%, #1f5c4b 100%);
+    border-color: #2f7d5c;
     color: #fff;
     font-weight: 600;
-    padding: 0.65rem 1.4rem;
-    border-radius: 0.65rem;
-    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.7rem 1.35rem;
+    border-radius: 0.7rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btn-accent:hover {
-    background: var(--accent-dark);
-    border-color: var(--accent-dark);
+    background: linear-gradient(135deg, #2b7254 0%, #1b4b3b 100%);
+    border-color: #2b7254;
     color: #fff;
     transform: translateY(-1px);
-    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
+    box-shadow: 0 10px 24px rgba(31, 92, 75, 0.2);
 }
 
 .btn-outline-accent {
@@ -185,16 +186,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-size: clamp(2.2rem, 5vw, 3.5rem);
-    color: #fff;
-    line-height: 1.15;
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    color: #f8fafc;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
     margin-bottom: 1rem;
+    max-width: 720px;
 }
 
 .hero-subtitle {
     color: #cbd5e1;
-    font-size: 1.1rem;
-    max-width: 620px;
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 640px;
     margin-bottom: 2rem;
 }
 
@@ -219,7 +223,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-intro {
     color: var(--text-muted);
-    max-width: 640px;
+    font-size: 1rem;
+    line-height: 1.75;
+    max-width: 740px;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .skill-card,
