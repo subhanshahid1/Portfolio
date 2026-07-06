@@ -20,6 +20,26 @@ return [
         'goals' => 'I am continuing to grow my skills in Laravel, backend development, and database design while building projects that demonstrate real-world workflows like authentication, CRUD operations, and admin management.',
     ],
 
+    'education' => [
+        [
+            'institution' => 'Aptech Computer Education',
+            'degree' => 'Advance Diploma in Software Engineering',
+            'period' => '2024 — Present',
+            'achievement' => 'GPA: 3.80 / 4.00',
+            'coursework' => [
+                'Advanced Mathematics',
+                'Data Structures & Algorithms',
+                'Database Systems',
+                'Web Application Development',
+                'Software Engineering Fundamentals',
+            ],
+            'honors' => [
+                'Merit-based academic recognition',
+                'Top performer in applied computing projects',
+            ],
+        ],
+    ],
+
     'skills' => [
         'frontend' => ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery'],
         'backend' => ['PHP', 'Laravel'],

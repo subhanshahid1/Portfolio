@@ -6,6 +6,8 @@ class AboutController extends Controller
 {
     public function index()
     {
-        return view('about');
+        return view('about', [
+            'education' => config('portfolio.education', []),
+        ]);
     }
 }

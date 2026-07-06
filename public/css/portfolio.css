@@ -306,18 +306,137 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
-.about-timeline {
-    border-left: 3px solid var(--accent);
-    padding-left: 1.5rem;
+.academic-timeline {
+    position: relative;
+    padding-left: 1rem;
 }
 
-.about-timeline-item {
-    margin-bottom: 2rem;
+.academic-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.2rem;
+    top: 0.3rem;
+    bottom: 0.3rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(45, 118, 92, 0.95), rgba(14, 116, 144, 0.35));
 }
 
-.about-timeline-item h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+.academic-timeline-item {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.academic-timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.05rem;
+    top: 1.1rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid rgba(9, 20, 34, 0.95);
+    box-shadow: 0 0 0 3px rgba(46, 125, 92, 0.2);
+}
+
+.timeline-card {
+    background: linear-gradient(145deg, rgba(15, 23, 42, 0.95), rgba(17, 24, 39, 0.92));
+    border: 1px solid rgba(86, 118, 147, 0.28);
+    border-radius: 1.15rem;
+    padding: 1.5rem;
+    box-shadow: 0 16px 40px rgba(2, 8, 23, 0.22);
+}
+
+.timeline-period {
+    color: #6ee7b7;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+}
+
+.timeline-institution {
+    font-size: 1.22rem;
+    color: #f8fafc;
+    margin-bottom: 0.35rem;
+}
+
+.timeline-degree {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-bottom: 0.6rem;
+}
+
+.timeline-summary {
+    color: #94a3b8;
+    font-size: 0.97rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.timeline-stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem 1.1rem;
+    border-radius: 0.95rem;
+    background: rgba(46, 125, 92, 0.14);
+    border: 1px solid rgba(110, 231, 183, 0.2);
+}
+
+.timeline-stat-label {
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #8bd3b3;
+}
+
+.timeline-stat-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.timeline-subsection {
+    padding: 1rem 1.1rem;
+    border-radius: 0.95rem;
+    background: rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(86, 118, 147, 0.2);
+    height: 100%;
+}
+
+.timeline-subsection h4 {
+    font-size: 0.98rem;
+    color: #e2e8f0;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-list {
+    display: grid;
+    gap: 0.45rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-list li {
+    position: relative;
+    padding-left: 1rem;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+.timeline-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #6ee7b7;
+    font-weight: 700;
 }
 
 .project-hero-image {

@@ -42,39 +42,63 @@
     <section class="section-padding pt-0">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="info-card h-100">
-                        <h3 class="h5">Education</h3>
-                        <div class="about-timeline mt-3">
-                            <div class="about-timeline-item">
-                                <h3>Aptech ADSE</h3>
-                                <p class="text-muted mb-0">{{ config('portfolio.semesters_completed') }} semesters completed with focus on web development, PHP, databases, and software engineering fundamentals.</p>
+                <div class="col-12">
+                    <div class="section-heading mb-4">
+                        <span class="section-label">Academic Profile</span>
+                        <h2 class="section-title">Academic Timeline</h2>
+                        <p class="section-intro mb-0">A structured overview of formal education, intellectual focus, and academic distinction.</p>
+                    </div>
+                </div>
+
+                @if (!empty($education))
+                    @foreach ($education as $entry)
+                        <div class="col-12">
+                            <div class="academic-timeline">
+                                <div class="academic-timeline-item">
+                                    <div class="timeline-card">
+                                        <div class="row g-4 align-items-start">
+                                            <div class="col-lg-7">
+                                                <p class="timeline-period">{{ $entry['period'] }}</p>
+                                                <h3 class="timeline-institution">{{ $entry['institution'] }}</h3>
+                                                <p class="timeline-degree">{{ $entry['degree'] }}</p>
+                                                <p class="timeline-summary">A rigorous academic path centered on software engineering, system design, and applied web development practice.</p>
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <div class="timeline-stat-card">
+                                                    <span class="timeline-stat-label">Academic Performance</span>
+                                                    <span class="timeline-stat-value">{{ $entry['achievement'] }}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-4 mt-1">
+                                            <div class="col-md-6">
+                                                <div class="timeline-subsection">
+                                                    <h4>Advanced Relevant Coursework</h4>
+                                                    <ul class="timeline-list">
+                                                        @foreach ($entry['coursework'] as $course)
+                                                            <li>{{ $course }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="timeline-subsection">
+                                                    <h4>Honors & Academic Awards</h4>
+                                                    <ul class="timeline-list">
+                                                        @foreach ($entry['honors'] as $honor)
+                                                            <li>{{ $honor }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="info-card h-100">
-                        <h3 class="h5">What I Build</h3>
-                        <ul class="feature-list mt-3 mb-0">
-                            <li>Responsive landing pages with Bootstrap</li>
-                            <li>PHP web apps with admin dashboards</li>
-                            <li>Forms, authentication, and CRUD workflows</li>
-                            <li>Database-driven business applications</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="info-card h-100">
-                        <h3 class="h5">Tools & Practices</h3>
-                        <ul class="feature-list mt-3 mb-0">
-                            <li>Git & GitHub for version control</li>
-                            <li>SEO-friendly semantic HTML</li>
-                            <li>Modern development with Cursor</li>
-                            <li>JSON, XML, and CMS concepts</li>
-                        </ul>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </section>
