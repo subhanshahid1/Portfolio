@@ -105,6 +105,37 @@
 
     <section class="section-padding pt-0">
         <div class="container">
+            <div class="row g-4 align-items-start">
+                <div class="col-12">
+                    <div class="section-heading mb-4">
+                        <span class="section-label">Credentials</span>
+                        <h2 class="section-title">Professional certifications & learning milestones</h2>
+                        <p class="section-intro mb-0">A concise record of structured training, applied learning, and externally recognized development pathways.</p>
+                    </div>
+                </div>
+
+                @if (!empty($certifications))
+                    @foreach ($certifications as $credential)
+                        <div class="col-md-6 col-xl-4">
+                            <article class="credential-card">
+                                <div class="credential-card-body">
+                                    <p class="credential-issuer">{{ $credential['issuer'] }}</p>
+                                    <h3>{{ $credential['title'] }}</h3>
+                                    <p class="credential-description">{{ $credential['description'] }}</p>
+                                </div>
+                                <a href="{{ $credential['verify_url'] }}" class="credential-link" target="_blank" rel="noopener noreferrer">
+                                    Verify Credential
+                                </a>
+                            </article>
+                        </div>
+                    @endforeach
+                @endif
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding pt-0">
+        <div class="container">
             <div class="text-center mb-5">
                 <span class="section-label">Skills</span>
                 <h2 class="section-title">Technical stack</h2>

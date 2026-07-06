@@ -26,7 +26,7 @@
                                 <a href="{{ config('portfolio.linkedin_url') }}" class="btn btn-outline-dark-custom btn-sm" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-linkedin me-1"></i> LinkedIn
                                 </a>
-                                <a href="{{ route('contact') }}" class="btn btn-outline-accent btn-sm">Request Resume</a>
+                                <a href="{{ asset('assets/docs/resume.pdf') }}" class="btn btn-outline-accent btn-sm" target="_blank" rel="noopener noreferrer">View Resume</a>
                             </div>
                         </div>
                     </div>
@@ -158,8 +158,8 @@
         <div class="container">
             <div class="cta-section">
                 <span class="section-label">Let's Connect</span>
-                <h2 class="section-title">Interested in working together?</h2>
-                <p class="section-intro mx-auto mb-4">I'm open to internships, collaborations, and project opportunities while continuing my ADSE journey.</p>
+                <h2 class="section-title">Open to thoughtful technical collaboration and long-term professional opportunities.</h2>
+                <p class="section-intro mx-auto mb-4">I am especially interested in projects that involve careful system design, reliable product thinking, and clear engineering execution.</p>
                 <a href="{{ route('contact') }}" class="btn btn-accent">Get In Touch</a>
             </div>
         </div>

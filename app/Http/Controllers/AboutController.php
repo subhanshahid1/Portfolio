@@ -8,6 +8,7 @@ class AboutController extends Controller
     {
         return view('about', [
             'education' => config('portfolio.education', []),
+            'certifications' => config('portfolio.certifications', []),
         ]);
     }
 }

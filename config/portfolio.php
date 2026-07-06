@@ -24,7 +24,7 @@ return [
         [
             'institution' => 'Aptech Computer Education',
             'degree' => 'Advance Diploma in Software Engineering',
-            'period' => '2024 — Present',
+            'period' => '2025 — Present',
             'achievement' => 'GPA: 3.80 / 4.00',
             'coursework' => [
                 'Advanced Mathematics',
@@ -37,6 +37,27 @@ return [
                 'Merit-based academic recognition',
                 'Top performer in applied computing projects',
             ],
+        ],
+    ],
+
+    'certifications' => [
+        [
+            'title' => 'Web Development Foundations',
+            'issuer' => 'Coursera',
+            'description' => 'Structured learning in responsive interfaces, version control, and modern web workflow fundamentals.',
+            'verify_url' => 'https://www.coursera.org/',
+        ],
+        [
+            'title' => 'Professional Web Programming',
+            'issuer' => 'Google',
+            'description' => 'Practical exposure to web technologies, development discipline, and digital product delivery.',
+            'verify_url' => 'https://grow.google/',
+        ],
+        [
+            'title' => 'Software Engineering Fundamentals',
+            'issuer' => 'Meta',
+            'description' => 'Focused study in software engineering practices, problem decomposition, and scalable application thinking.',
+            'verify_url' => 'https://www.meta.com/',
         ],
     ],
 

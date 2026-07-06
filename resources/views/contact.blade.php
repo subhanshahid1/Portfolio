@@ -18,8 +18,8 @@
                 <div class="col-lg-5">
                     <div class="info-card h-100">
                         <span class="section-label">Direct Contact</span>
-                        <h2 class="section-title h3">Let's talk</h2>
-                        <p class="text-muted">You can reach me directly by email or use the contact form.</p>
+                        <h2 class="section-title h3">A straightforward way to reach me</h2>
+                        <p class="text-muted mb-4">For professional inquiries, collaborations, or academic opportunities, you can contact me directly by email or through the form.</p>
                         <ul class="list-unstyled d-grid gap-3 mb-4">
                             <li>
                                 <i class="bi bi-envelope text-accent me-2"></i>
@@ -34,7 +34,7 @@
                                 {{ config('portfolio.location') }}
                             </li>
                         </ul>
-                        <p class="small text-muted mb-0">Open to internships, freelance opportunities, and collaborations while completing my ADSE program.</p>
+                        <p class="small text-muted mb-0">I welcome conversations around software engineering, internships, and thoughtful technical collaborations.</p>
                     </div>
                 </div>
 
